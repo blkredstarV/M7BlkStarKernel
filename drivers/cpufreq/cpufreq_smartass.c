@@ -160,7 +160,6 @@ struct cpufreq_governor cpufreq_gov_smartass = {
 #else
 	.max_transition_latency = 9000000,
 #endif
-	.owner = THIS_MODULE,
 };
 
 static void smartass_update_min_max(struct smartass_info_s *this_smartass, struct cpufreq_policy *policy, int suspend) {
@@ -748,6 +747,6 @@ static void __exit cpufreq_smartass_exit(void)
 
 module_exit(cpufreq_smartass_exit);
 
-MODULE_AUTHOR ("Erasmux");
+/*MODULE_AUTHOR ("Erasmux");
 MODULE_DESCRIPTION ("'cpufreq_smartass' - A smart cpufreq governor!");
-MODULE_LICENSE ("GPL");
+MODULE_LICENSE ("GPL");*/
